@@ -11,6 +11,13 @@ document.getElementById('gruposSelecionado').addEventListener('click', function(
         document.body.innerHTML = "";
         alert(`Os grupos selecionados foram: ${grupo1} e ${grupo2}`);
 
+        const mostrarGrupoUm = document.createElement('h2');
+        const mostrarGrupoDois = document.createElement('h2');
+        mostrarGrupoUm.textContent = grupo1;
+        mostrarGrupoDois.textContent = grupo2;
+        document.body.appendChild(mostrarGrupoUm);
+        document.body.appendChild(mostrarGrupoDois);
+
         const imagem = document.createElement('img');
         imagem.src = '../img/fundo.png';
         imagem.id = 'imagem'

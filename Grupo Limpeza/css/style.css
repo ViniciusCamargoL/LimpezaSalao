@@ -25,7 +25,14 @@ button {
 img {
     height: 100%;
     width: 100%;
+    background-size: cover;
 }
+
+h2 {
+    position: absolute;
+    padding: 20px;
+}
+
 #titulo {
     top: inherit;
     margin: 0;
