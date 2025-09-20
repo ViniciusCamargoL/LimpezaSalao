@@ -8,11 +8,12 @@ document.getElementById('gruposSelecionado').addEventListener('click', function(
     if (grupo1 === grupo2) {
         alert("[ERRO] O mesmo grupo foi selecionado, verefique os grupos selecionados novamente.");
     } else {
-        document.getElementById('content').innerHTML = "";
+        document.body.innerHTML = "";
         alert(`Os grupos selecionados foram: ${grupo1} e ${grupo2}`);
-        const imagem = document.createElement = ("img");
-        imagem.src = "../img/fundo.png";
-    
-        document.getElementById("content").appendChild(novaImagem);
-    }
+
+        const imagem = document.createElement('img');
+        imagem.src = '../img/fundo.png';
+        imagem.id = 'imagem'
+        document.body.appendChild(imagem);
+    };
 });
