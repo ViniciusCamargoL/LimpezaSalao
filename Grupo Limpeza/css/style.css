@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: normal 12pt Arial;
+    background-color: #fAf9f6;
+}
+
+select {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+#titulo {
+    top: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(12, 65, 163);
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(12, 65, 163);
+}
+
+.box {
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
