@@ -9,8 +9,14 @@ document.getElementById('gruposSelecionado').addEventListener('click', function(
         alert("[ERRO] O mesmo grupo foi selecionado, verefique os grupos selecionados novamente.");
     } else {
         document.body.innerHTML = "";
-        alert(`Os grupos selecionados foram: ${grupo1} e ${grupo2}`);
 
+        // Adiciona imagem fundo
+        const imagem = document.createElement('img');
+        imagem.src = '../img/fundo.png';
+        imagem.id = 'imagem'
+        document.body.appendChild(imagem);
+
+        // Adiciona os grupos selecionados
         const mostrarGrupoUm = document.createElement('h2');
         const mostrarGrupoDois = document.createElement('h2');
         mostrarGrupoUm.textContent = grupo1;
@@ -18,9 +24,5 @@ document.getElementById('gruposSelecionado').addEventListener('click', function(
         document.body.appendChild(mostrarGrupoUm);
         document.body.appendChild(mostrarGrupoDois);
 
-        const imagem = document.createElement('img');
-        imagem.src = '../img/fundo.png';
-        imagem.id = 'imagem'
-        document.body.appendChild(imagem);
     };
 });
